@@ -20,4 +20,11 @@ elves.sort((a, b) => b.total - a.total);
 console.log(elves[0].total);
 
 // Part 2
-console.log(elves[0].total + elves[1].total + elves[2].total);
+console.log(
+  elves
+    .slice(0, 3)
+    .reduce(
+      (previousValue, currentValue) => previousValue + currentValue.total,
+      0
+    )
+);
