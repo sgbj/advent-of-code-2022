@@ -6,6 +6,7 @@
 - [x] Day 4: Camp Cleanup
 - [x] Day 5: Supply Stacks
 - [x] Day 6: Tuning Trouble
+- [x] Day 7: No Space Left On Device
 
 ## Example
 
