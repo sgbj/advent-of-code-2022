@@ -23,6 +23,7 @@ function compare(left, right) {
   }
 }
 
+// Part 1
 let sum = 0;
 
 for (let i = 0; i < input.length; i += 3) {
@@ -35,8 +36,18 @@ for (let i = 0; i < input.length; i += 3) {
   }
 }
 
-// Part 1
 console.log(sum);
 
 // Part 2
-console.log();
+const divider1 = [[2]];
+const divider2 = [[6]];
+
+const packets = [divider1, divider2];
+
+for (let i = 0; i < input.length; i += 3) {
+  packets.push(eval(input[i]), eval(input[i + 1]));
+}
+
+packets.sort(compare);
+
+console.log((packets.indexOf(divider1) + 1) * (packets.indexOf(divider2) + 1));
