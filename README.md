@@ -12,9 +12,9 @@
 - [x] Day 10: Cathode-Ray Tube
 - [x] Day 11: Monkey in the Middle
 - [x] Day 12: Hill Climbing Algorithm
-- [ ] Day 13: Distress Signal
-- [ ] Day 14: Regolith Reservoir
-- [ ] Day 15:
+- [x] Day 13: Distress Signal
+- [x] Day 14: Regolith Reservoir
+- [x] Day 15: Beacon Exclusion Zone
 - [ ] Day 16:
 - [ ] Day 17:
 - [ ] Day 18:

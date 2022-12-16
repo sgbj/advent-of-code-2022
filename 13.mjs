@@ -23,31 +23,75 @@ function compare(left, right) {
   }
 }
 
-// Part 1
 let sum = 0;
+const divider1 = [[2]];
+const divider2 = [[6]];
+let divider1Index = 0;
+let divider2Index = 1; // Divider 1 precedes divider 2
 
 for (let i = 0; i < input.length; i += 3) {
-  const packet1 = eval(input[i]);
-  const packet2 = eval(input[i + 1]);
+  const packet1 = parse(input[i]);
+  const packet2 = parse(input[i + 1]);
 
-  const cmp = compare(packet1, packet2);
-  if (cmp < 0) {
+  if (compare(packet1, packet2) < 0) {
     sum += i / 3 + 1;
   }
+
+  if (compare(packet1, divider1) < 0) divider1Index++;
+  if (compare(packet2, divider1) < 0) divider1Index++;
+  if (compare(packet1, divider2) < 0) divider2Index++;
+  if (compare(packet2, divider2) < 0) divider2Index++;
 }
 
+// Part 1
 console.log(sum);
 
 // Part 2
-const divider1 = [[2]];
-const divider2 = [[6]];
+console.log((divider1Index + 1) * (divider2Index + 1));
 
-const packets = [divider1, divider2];
+// Or just use eval
+function parse(value) {
+  const stack = [];
+  let current = null;
+  let number = "";
 
-for (let i = 0; i < input.length; i += 3) {
-  packets.push(eval(input[i]), eval(input[i + 1]));
+  for (const c of value) {
+    switch (c) {
+      case "[": {
+        const temp = [];
+        current?.push(temp);
+        current = temp;
+        stack.push(current);
+        break;
+      }
+
+      case "]": {
+        if (number) {
+          current.push(parseInt(number));
+          number = "";
+        }
+        stack.pop();
+        const temp = stack.at(-1);
+        if (temp) {
+          current = temp;
+        }
+        break;
+      }
+
+      case ",": {
+        if (number) {
+          current.push(parseInt(number));
+          number = "";
+        }
+        break;
+      }
+
+      default: {
+        number += c;
+        break;
+      }
+    }
+  }
+
+  return current;
 }
-
-packets.sort(compare);
-
-console.log((packets.indexOf(divider1) + 1) * (packets.indexOf(divider2) + 1));
