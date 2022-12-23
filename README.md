@@ -15,13 +15,13 @@
 - [x] Day 13: Distress Signal
 - [x] Day 14: Regolith Reservoir
 - [x] Day 15: Beacon Exclusion Zone
-- [ ] Day 16:
-- [ ] Day 17:
-- [ ] Day 18:
-- [ ] Day 19:
-- [ ] Day 20:
-- [ ] Day 21:
-- [ ] Day 22:
+- [x] Day 16: Proboscidea Volcanium
+- [x] Day 17: Pyroclastic Flow
+- [ ] Day 18: Boiling Boulders
+- [ ] Day 19: Not Enough Minerals
+- [ ] Day 20: Grove Positioning System
+- [ ] Day 21: Monkey Math
+- [ ] Day 22: Monkey Map
 - [ ] Day 23:
 - [ ] Day 24:
 - [ ] Day 25:
