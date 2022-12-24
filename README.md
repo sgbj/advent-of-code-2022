@@ -17,12 +17,12 @@
 - [x] Day 15: Beacon Exclusion Zone
 - [x] Day 16: Proboscidea Volcanium
 - [x] Day 17: Pyroclastic Flow
-- [ ] Day 18: Boiling Boulders
-- [ ] Day 19: Not Enough Minerals
-- [ ] Day 20: Grove Positioning System
+- [x] Day 18: Boiling Boulders
+- [x] Day 19: Not Enough Minerals
+- [x] Day 20: Grove Positioning System
 - [ ] Day 21: Monkey Math
 - [ ] Day 22: Monkey Map
-- [ ] Day 23:
+- [ ] Day 23: Unstable Diffusion
 - [ ] Day 24:
 - [ ] Day 25:
 
