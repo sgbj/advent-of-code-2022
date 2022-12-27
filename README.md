@@ -21,10 +21,10 @@
 - [x] Day 19: Not Enough Minerals
 - [x] Day 20: Grove Positioning System
 - [x] Day 21: Monkey Math
-- [ ] Day 22: Monkey Map
-- [ ] Day 23: Unstable Diffusion
+- [x] Day 22: Monkey Map
+- [x] Day 23: Unstable Diffusion
 - [ ] Day 24: Blizzard Basin
-- [ ] Day 25:
+- [ ] Day 25: Full of Hot Air
 
 ## Example
 
