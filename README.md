@@ -23,8 +23,8 @@
 - [x] Day 21: Monkey Math
 - [x] Day 22: Monkey Map
 - [x] Day 23: Unstable Diffusion
-- [ ] Day 24: Blizzard Basin
-- [ ] Day 25: Full of Hot Air
+- [x] Day 24: Blizzard Basin
+- [x] Day 25: Full of Hot Air
 
 ## Example
 
